@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="src" href="css/formulario.css">
+    
+</head>
+
+<body>
+    <p><h1>Gestión Escolar</h1>
+
+    <!-- Botones para mostrar los formularios -->
+    <button onclick="mostrarRegistroAlumno()">Registrar Alumno</button>
+    <button onclick="mostrarRegistroNotas()">Registrar Notas</button>
+    <button onclick="mostrarRegistroMaterias()">Registrar Materias</button>
+    </p>
+
+    <!-- Formulario para el registro de alumnos -->
+    <form id="registroAlumno" class="formulario" style="display: none;">
+        <h2>Registro de Alumno</h2>
+        <label for="nombreAlumno">Nombre:</label>
+        <input type="text" id="nombreAlumno" required><br><br>
+
+        <label for="direccionAlumno">Dirección:</label>
+        <input type="text" id="direccionAlumno" required><br><br>
+
+        <label for="telefonoAlumno">Teléfono:</label>
+        <input type="text" id="telefonoAlumno" required><br><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+   <!-- Formulario para el registro de notas -->
+<form id="registroNotas" class="formulario" style="display: none;">
+    <h2>Registro de Notas</h2>
+    <label for="nombreAlumnoNota">Nombre del Alumno:</label>
+    <input type="text" id="nombreAlumnoNota" required><br><br>
+
+    <label for="materiaNota">Materia:</label>
+    <input type="text" id="materiaNota" required><br><br>
+
+    <label for="nota">Nota:</label>
+    <input type="number" id="nota" required min="0" max="20"><br><br>
+
+    <button type="submit">Registrar</button>
+</form>
+
+<!-- Formulario para el registro de materias -->
+<form id="registroMaterias" class="formulario" style="display: none;">
+    <h2>Registro de Materias</h2>
+    <label for="nombreMateria">Nombre de la Materia:</label>
+    <input type="text" id="nombreMateria" required><br><br>
+
+    <label for="codigoMateria">Código de la Materia:</label>
+    <input type="text" id="codigoMateria" required><br><br>
+
+    <button type="submit">Registrar</button>
+</form>
+
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>
